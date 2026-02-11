@@ -5,6 +5,8 @@ import LostItem from '@/models/LostItem';
 import Alert from '@/models/Alert';
 import User from '@/models/User';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(req) {
     try {
         const user = await currentUser();

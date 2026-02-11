@@ -4,6 +4,8 @@ import dbConnect from '@/lib/db';
 import LostItem from '@/models/LostItem';
 import Alert from '@/models/Alert';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(req) {
     try {
         const user = await currentUser();
